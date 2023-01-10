@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Pathology Messaging - FHIR - API Catalogue</title>
+    <title>Land Charges Full Search - API Catalogue</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="https://www.api.gov.uk/nd/pathology-messaging-fhir/">
+    <link rel="canonical" href="https://www.api.gov.uk/hmlr/land-charges-full-search/">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:domain" content="www.api.gov.uk" />
       <meta name="twitter:image" content="https://www.api.gov.uk/images/govuk-large.png" />
-      <meta name="twitter:title" content="Pathology Messaging - FHIR - API Catalogue" />
-      <meta name="twitter:url" content="https://www.api.gov.uk/nd/pathology-messaging-fhir/" />
+      <meta name="twitter:title" content="Land Charges Full Search - API Catalogue" />
+      <meta name="twitter:url" content="https://www.api.gov.uk/hmlr/land-charges-full-search/" />
 
       <meta property="og:image" content="https://www.api.gov.uk/images/govuk-large.png" />
       <meta property="og:site_name" content="API Catalogue" />
-      <meta property="og:title" content="Pathology Messaging - FHIR" />
+      <meta property="og:title" content="Land Charges Full Search" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://www.api.gov.uk/nd/pathology-messaging-fhir/" />
+      <meta property="og:url" content="https://www.api.gov.uk/hmlr/land-charges-full-search/" />
 
     
   </head>
@@ -1739,36 +1739,38 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="pathology-messaging-fhir">Pathology Messaging - FHIR</h1>
+            <h1 id="land-charges-full-search">Land Charges Full Search</h1>
 
   <h2>Overview</h2>
-  <p> </p>
+  <p>A land charge is an interest in land that imposes an obligation on the landowner in favour of some other person. Use this service to request an official search of the Land Charges Register. </p>
 
-<p>Use this integration to share pathology results from a Laboratory Information Management System (LIMS) to the requestor, typically a healthcare worker in NHS primary or secondary care.</p>
+<p>If you are a software developer: </p>
 
-<p>Initially it focuses on haematology and clinical biochemistry test reporting - also known as chemical pathology.</p>
+<ul>
+<li>Use this document to integrate data into your system. </li>
+</ul>
 
-<p>This integration uses MESH to send and receive pathology results.</p>
+<p>Poll Request Service URL for production environment: <a href="https://businessgateway.landregistry.gov.uk/b2b/BGSoapEngine/FullSearchV2_1PollRequestWebService?wsdl">https://businessgateway.landregistry.gov.uk/b2b/BGSoapEngine/FullSearchV2_1PollRequestWebService?wsdl</a> </p>
 
-<p>It is intended to replace the current Pathology Messaging - EDIFACT API and supersedes Laboratory HL7 V3 (see the Message Implementation Manual under Domains -&gt; Health and Clinical Management -&gt; Laboratory). </p>
+<p>For test environment endpoints replace <a href="https://businessgateway.landregistry.gov.uk/b2b/BGSoapEngine">https://businessgateway.landregistry.gov.uk/b2b/BGSoapEngine</a> with <a href="https://bgtest.landregistry.gov.uk/b2b/BGStubService">https://bgtest.landregistry.gov.uk/b2b/BGStubService</a></p>
 
 
 
   <h2>Documentation</h2>
   <p>
-    <a href="https://digital.nhs.uk/developer/api-catalogue/pathology-messaging-fhir">Pathology Messaging - FHIR documentation</a>
+    <a href="https://landregistry.github.io/bgtechdoc/services/land_charges_full_search/">Land Charges Full Search documentation</a>
   </p>
 
   <h2>Endpoint</h2>
   <p>
     <code>
-      https://digital.nhs.uk/developer/api-catalogue/pathology-messaging-fhir
+      https://businessgateway.landregistry.gov.uk/b2b/BGSoapEngine/FullSearchV2_1WebService?wsdl
     </code>
   </p>
 
   <h2>Contact</h2>
   <p>
-    https:&#x2F;&#x2F;digital.nhs.uk&#x2F;developer&#x2F;help-and-support
+    channelpartners@landregistry.gov.uk
   </p>
 
 
@@ -1778,7 +1780,7 @@
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/co-cddo/api-catalogue/issues/new?labels=bug&amp;title=Re:%20'Pathology%20Messaging%20-%20FHIR'&amp;body=Problem%20with%20'Pathology%20Messaging%20-%20FHIR'%20(https://www.api.gov.uk/nd/pathology-messaging-fhir/)">Report a problem with this page's contents</a></li>
+                <li><a href="https://github.com/co-cddo/api-catalogue/issues/new?labels=bug&amp;title=Re:%20'Land%20Charges%20Full%20Search'&amp;body=Problem%20with%20'Land%20Charges%20Full%20Search'%20(https://www.api.gov.uk/hmlr/land-charges-full-search/)">Report a problem with this page's contents</a></li>
               </ul>
           </aside>
 
